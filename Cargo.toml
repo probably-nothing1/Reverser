@@ -1,0 +1,20 @@
+[package]
+name = "fire"
+version = "0.1.0"
+authors = ["gasiortomasz <gasior.tt@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+path = "src/reverse_file.rs"
+name = "reverse_file"
+
+[[bin]]
+path = "src/reverse_folder.rs"
+name = "reverse_folder"
+
+[dependencies]
+glob = "0.3"
+rayon = "1.5.0"
+memmap = "0.7"
